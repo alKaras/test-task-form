@@ -14,7 +14,7 @@
 
 <body>
     <div class="wrapper">
-        <div class="form-container">
+        <div class="form-container" style="display: block;">
             <form action="#">
                 <div class="form-content">
                     <div class="email">
@@ -26,12 +26,19 @@
                         <input type="password" name="user-pass" id="password" required>
                     </div>
                 </div>
-                <button type="submit" class="submit-btn">Submit</button>
+                <button type="submit" class="submit-btn btns-style">Submit</button>
             </form>
-
+        </div>
+        <div class="modal-window">
+            <div class="modal--heading">Please confirm account creation for <span id="user-email">user-email</span></div>
+            <div class="buttons">
+                <button class="cancel-btn btns-style">cancel</button>
+                <button class="confirm-btn btns-style">confirm</button>
+            </div>
         </div>
         <div class="greeting-container" style="display: none;">
             <div class="greeting--heading">Hello, user with email <span id="user-email"></span></div>
+            <img src="img/greeting.jpg" alt="greeting-man">
         </div>
     </div>
 </body>

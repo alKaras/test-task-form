@@ -1,4 +1,6 @@
-*, *::after, *::before{
+*,
+*::after,
+*::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,9 +8,11 @@
 
 
 
-body {
+body, button {
     font-family: Roboto;
+    font-weight: 500;
 }
+
 .wrapper {
     min-height: 100vh;
     overflow: hidden;
@@ -17,11 +21,14 @@ body {
     align-items: center;
 }
 
-.form-container {
-    
+.form-container {}
+
+.form-content>*:not(:last-child) {
+    margin-bottom: 40px;
 }
+
 .form-content {
-    padding: 40px 20px 20px;
+    padding: 60px 20px 20px;
     border: 2px solid black;
     margin-bottom: 25px;
     position: relative;
@@ -34,26 +41,69 @@ body {
     top: -10px;
     left: 10px;
     padding: 0 5px;
+}
 
+input {
+    width: 250px;
+    height: 30px;
+    padding: 7px 3px;
+    font-size: 16px;
+    border: 2px solid black;
 }
 
 
-
-.email, .password  {
+.email,
+.password {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
 }
 
-.password {
-}
 
 .submit-btn {
     margin: 0 auto;
     display: block;
+}
+
+.btns-style {
     padding: 5px 20px;
     border: 2px solid black;
     background: #fff;
     box-shadow: 2px 2px black;
     cursor: pointer;
+}
+
+.modal-window {
+    display: none;
+    position: absolute;
+    top: 35%;
+    border: 2px solid black;
+    padding: 5px 15px 10px 15px;
+    background: #fff;
+    border-radius: 20px;
+}
+
+.modal--heading {
+    margin-bottom: 50px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    align-items: center;
+}
+
+.cancel-btn {}
+
+.confirm-btn {
+    color: #fff;
+    background-color: #000;
+}
+
+.greeting-container > *:not(:last-child){
+    margin-bottom: 15px;
+}
+.greeting--heading {
+    font-size: 18px;
 }
