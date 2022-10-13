@@ -76,7 +76,6 @@ input {
 .modal-window {
     display: none;
     position: absolute;
-    width: 60%;
     top: 35%;
     border: 2px solid black;
     padding: 5px 15px 10px 15px;
